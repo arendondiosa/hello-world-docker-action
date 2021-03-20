@@ -1,9 +1,6 @@
-FROM python:3.9-slim
+FROM python:3.9
 
 LABEL "maintainer" = "Alejandro E. Rendon <alejandro@rendon.co>"
-
-RUN apt-get update
-RUN apt-get install -y build-essential
 
 ADD requirements.txt /requirements.txt
 ADD entrypoint.sh /entrypoint.sh
