@@ -7,9 +7,11 @@ jobs:
     steps:
     - name: Checkout branch
       uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
     - name: Hello world action step
       id: hello
-      uses: arendondiosa/hello-world-docker-action@main
+      uses: lendingfront/python-formatter-check@main
       with:
         branch: 'main'
 
