@@ -9,7 +9,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Hello world action step
       id: hello
-      uses: lendingfront/python-formatter-check@main
+      uses: arendondiosa/hello-world-docker-action@main
       with:
         branch: 'main'
 
